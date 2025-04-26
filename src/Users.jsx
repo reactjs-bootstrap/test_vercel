@@ -32,7 +32,7 @@ const Users = () => {
 
   const handleDelete = (id) => {
     axios
-      .delete("http://localhost:7000/" + id)
+      .delete("https://todoapp-server2-f2r8.onrender.com/" + id)
       .then(() => window.location.reload());
   };
   useEffect(() => {
