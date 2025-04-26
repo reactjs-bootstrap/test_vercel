@@ -37,7 +37,7 @@ const Users = () => {
   };
   useEffect(() => {
     axios
-      .get("http://localhost:7000/")
+      .get("https://todoapp-server2-f2r8.onrender.com/")
       .then((res) => {
         setUsers(res.data);
         // console.log(res.data);
