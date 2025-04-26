@@ -11,7 +11,7 @@ const CreateUsers = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:7000/", { name, email, age })
+      .post("https://todoapp-server2-f2r8.onrender.com/", { name, email, age })
       .then(() => {
         navigate("/");
       })
