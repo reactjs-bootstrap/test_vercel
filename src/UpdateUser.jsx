@@ -12,11 +12,11 @@ const UpdateUsers = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .put("http://localhost:7000/" + id, { name, email, age })
+      .put("https://todoapp-server2-f2r8.onrender.com/" + id, { name, email, age })
       .then(() => navigate("/"));
   };
   useEffect(() => {
-    axios.get("http://localhost:7000/" + id).then((res) => {
+    axios.get("https://todoapp-server2-f2r8.onrender.com/" + id).then((res) => {
       setName(res.data.name), setEmail(res.data.email), setAge(res.data.age);
     });
   }, []);
